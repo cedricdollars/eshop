@@ -11,22 +11,34 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
+        display: 'flex',
+        flex: "1",
+        justifyContent: "space-between",
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <nav 
+        style={{
+          color: 'white',
+          marginBottom: 0,
+          marginLeft: 20
+        }
+        }
+      >
+        <Link to="/">Home</Link>
+
+        <Link to="/">Contact</Link>
+
+        <Link to="/">Catalog</Link>
+
+        <Link to="/">Checkout</Link>
+
+        <Link to="/">Account</Link>
+
+        <Link to="/">Blog</Link>
+
+        <Link to="/">Cart</Link>
+      </nav>
     </div>
   </header>
 )
