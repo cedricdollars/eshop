@@ -1,54 +1,54 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import headerStyles from './header.module.scss'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        display: 'flex',
-        flex: "1",
-        justifyContent: "space-between",
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <nav 
-        style={{
-          color: 'white',
-          marginBottom: 0,
-          marginLeft: 20
-        }
-        }
-      >
-        <Link to="/">Home</Link>
+const Header = () => {
 
-        <Link to="/">Contact</Link>
 
-        <Link to="/">Catalog</Link>
-
-        <Link to="/">Checkout</Link>
-
-        <Link to="/">Account</Link>
-
-        <Link to="/">Blog</Link>
-
-        <Link to="/">Cart</Link>
+  return(
+    <header className={headerStyles.header}>
+      <nav className={headerStyles.headerNav}>
+        <div className={headerStyles.title}>
+          <Link to="/">
+            Mobilia
+          </Link>
+        </div>
+        <ul className={headerStyles.navList}>
+          <li className={headerStyles.navItem}>
+            <Link to="/">Home</Link>
+          </li>
+          <li className={headerStyles.navItem}>
+            <Link to="/About">About</Link>
+          </li>
+          <li className={headerStyles.navItem}>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li className={headerStyles.navItem}>
+            <Link to="/products">Products</Link>
+          </li>
+          <li className={headerStyles.navItem}>
+            <Link to="/contact">Contact</Link>
+          </li>
+          
+        </ul>
+        <div>
+          <ul className={headerStyles.navList}>
+            <li className={headerStyles.navItem}>
+              <Link to="/account">Account</Link>
+            </li>
+            <li className={headerStyles.navItem}>
+              <Link to="/card">Card</Link>
+            </li>
+          </ul>
+         
+        </div>
       </nav>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+        
+    </header>
+    
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+
 
 export default Header
