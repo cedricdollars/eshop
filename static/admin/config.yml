@@ -1,0 +1,22 @@
+backend:
+  name: github
+  branch: master
+  repo: cedricdollars/eshop
+
+media_folder: static/assets
+public_folder: /assets
+
+collections: 
+  - name: product
+    label: Produit
+    folder: products
+    create: true
+    fields: 
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: false, label: Prix, default: "5"}
+      - { name: quantity, required: false, label: Quantity, default: "100"}
+      - { name: description, required: false, label: Description, widget: markdown, default: "None"}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: sku, required: false, label: Sku}
+      - { name: path, required: true, label: Path}
+      - { name: promo, widget: boolean, label: Promo, default: false}
