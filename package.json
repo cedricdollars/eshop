@@ -34,7 +34,8 @@
         "react-dom": "^16.12.0",
         "react-helmet": "^6.0.0",
         "react-netlify-identity": "^0.2.5",
-        "react-netlify-identity-widget": "^0.2.7"
+        "react-netlify-identity-widget": "^0.2.7",
+        "semantic-ui-react": "^0.88.2"
     },
     "devDependencies": {
         "prettier": "2.0.5"

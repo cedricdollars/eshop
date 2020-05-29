@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&family=Poppins:wght@600&display=swap');
 $fontFamily : 'Poppins';
 $color: '#b3b1b1';
 * {
@@ -7,9 +7,10 @@ $color: '#b3b1b1';
     margin: 0;
 }
 .header {
-    height: 100vh;
-    background: url("../images/cover.jpeg") no-repeat;
-    background-size: contain;
+    min-height: 80vh;
+    background: url("../images/bg-bed.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .header-nav {  
     display: flex;
@@ -20,26 +21,25 @@ $color: '#b3b1b1';
     height: 65px;
     width: 100vw;
     text-decoration: none;
-   
-    .title {   
-        list-style-type: none;
-        margin-top: -2rem;
-        font-family: 'Lato', 'serif';
+    z-index: 100;
+    .logo {   
+        background: url("../../static/assets/logo.jpeg");
+        width: 50px;
+        height: 50px;
     }   
 }
+
 .nav-list {
     display: flex;
     list-style: none;
 }
 .nav-item{
-    color: $color;  
+    color: white ;  
     font-family: $fontFamily;
     text-transform: uppercase;
     font-size: 0.75em;
     margin-right: .2rem;
     padding: 2rem .5rem;
-    &:hover{
-        text-decoration: none;
-
-    }
+  
 }
+

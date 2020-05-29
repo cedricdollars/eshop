@@ -1,16 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 import headerStyles from './header.module.scss'
+import { Icon } from 'semantic-ui-react'
+import  Login  from './login'
 
 const Header = () => {
-
 
   return(
     <header className={headerStyles.header}>
       <nav className={headerStyles.headerNav}>
-        <div className={headerStyles.title}>
+        <div className={headerStyles.logo}>
           <Link to="/">
-            Mobilia
+            Mobelia
           </Link>
         </div>
         <ul className={headerStyles.navList}>
@@ -34,10 +35,14 @@ const Header = () => {
         <div>
           <ul className={headerStyles.navList}>
             <li className={headerStyles.navItem}>
-              <Link to="/account">Account</Link>
-            </li>
+              <a href="#" className="items-center snipcart-checkout">
+                <Icon className="flex">
+                  <Icon name="cart" className="text-white" />
+                </Icon>
+              </a> 
+            </li>       
             <li className={headerStyles.navItem}>
-              <Link to="/card">Card</Link>
+              <Login />
             </li>
           </ul>
          
