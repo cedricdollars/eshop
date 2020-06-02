@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import headerStyles from './header.module.scss'
 import { Icon } from 'semantic-ui-react'
+import logo from '../images/logo.png'
 import  Login  from './login'
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
       <nav className={headerStyles.headerNav}>
         <div className={headerStyles.logo}>
           <Link to="/">
-            Mobelia
+            <img src={logo} alt="Mon logo" />
           </Link>
         </div>
         <ul className={headerStyles.navList}>

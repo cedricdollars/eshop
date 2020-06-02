@@ -1,3 +1,4 @@
+require('dotenv').config()
 module.exports = {
     siteMetadata: {
         title: `Mobilia Shop`,
@@ -14,8 +15,9 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
-        'gatsby-transformer-remark',
-        'gatsby-plugin-sass',
+        `gatsby-transformer-remark`,
+        `gatsby-plugin-sass`,
+        `gatsby-plugin-less`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
@@ -34,6 +36,21 @@ module.exports = {
             resolve: `gatsby-plugin-netlify-identity`,
             options: {
                 url: `https://e-shop-site.netlify.app/`
+            }
+        },
+        {
+            resolve: `gatsby-plugin-mailchimp`,
+            options: {
+                endpoint: process.env.MAILCHIMP_ENDPOINT,
+                timeout: 3500
+            }
+        },
+        {
+            resolve: `gatsby-source-stripe`,
+            options: {
+                objects: ["Sku", "products"],
+                secretKey: process.env.STRIPE_SECRET_KEY,
+                downloadFiles: false
             }
         }
         // this (optional) plugin enables Progressive Web App + Offline functionality
