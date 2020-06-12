@@ -1,7 +1,7 @@
 import React from "react"
 import { Dropdown, Button, Icon } from "semantic-ui-react"
 import { Link } from "gatsby"
-
+import './styles/style.scss'
 
 function handleClick() {
   try {
@@ -35,19 +35,19 @@ const toRender = loggedOrNot()
       <Link to="/compte" className="uppercase relative block py-6 px-2 lg:p-6 text-sm font-bold"> <Icon name='cart'/>Commandes</Link>
       <Link to="/parametres" className="uppercase relative block py-6 px-2 lg:p-6 text-sm font-bold"><Icon
         name='options'/>Paramètres</Link>
-      <Button icon='sign-in' iconPosition='left' onClick={logOut} content='Déconnexion'/>
+      <Button className="btn-account" icon='log out' iconPosition='left' onClick={logOut} content='Déconnexion'/>
     </Dropdown.Menu>
   </Dropdown>
   :
-  <Dropdown icon="user circle" pointing='top right'>
+  <Dropdown icon="user" pointing='top left'>
     <Dropdown.Menu>
-      <Button icon='sign-in' onClick={handleClick} content='Connexion'/>
+      <Button className="btn-account" onClick={handleClick}>Log In</Button>
     </Dropdown.Menu>
   </Dropdown>
 
 const Login = () => {
   return (
-    <div className="flex items-center ml-5 pr-5">
+    <div className={{color: 'white'}}>
       {toRender}
     </div>
   )

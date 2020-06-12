@@ -17,6 +17,8 @@ module.exports = {
         },
         `gatsby-transformer-remark`,
         `gatsby-plugin-sass`,
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-netlify-cms`,
         `gatsby-plugin-less`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,

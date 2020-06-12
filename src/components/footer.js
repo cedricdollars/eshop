@@ -29,7 +29,7 @@ const Footer = () => {
                 </p>
                 <p className="my-3 block font-weight-bold" >Phone :<span className="text-teal-600 px-2 ">(+33)762196004</span></p>
                 <p className="my-3 block font-weight-bold">Email:<span className="text-teal-600 px-2">gabyngoune@yahoo.fr</span></p>
-                <a className="my-3 block" href="/#">Prix <span className="text-teal-600 text-xs p-1"></span></a>
+                
           </div>
           <div className="p-5 w-49 ">
             <div className="text-xs uppercase text-gray-500 font-medium">Informations</div>
@@ -51,15 +51,18 @@ const Footer = () => {
                 />
                 <Form.Button 
                 content='Submit'
-                className="ui primary button"
+               
                 />
                 
                 </Form.Group>
             </Form>
             
-          </div>
-        
+          </div> 
       
+        </div>
+        <hr />
+        <div className="flex bg-center footer">
+            <strong>Copyright © 2020<span className="text-xs yellow">Mobelia</span></strong>
         </div>
       </footer>
     )

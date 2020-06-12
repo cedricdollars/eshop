@@ -1,9 +1,9 @@
-
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'semantic-ui-css/semantic.min.css'
 import Header from "./header"
 import  CardProducts  from '../components/cardProducts'
 import Footer from './footer'
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       <section>
         <div className="container mx-auto px-6 ">
           <h3 className="text-4xl font-bold text-center text-gray-800 mb-8 uppercase">
-            Our products
+            
           </h3>
         </div>
         <div className="container mx-auto px-5">
@@ -48,14 +48,10 @@ const Layout = ({ children }) => {
         </div>
        
       </section>
-     
-     
-        
-     
-
-      
-
       <Footer/>
+      <Helmet>
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>
+      </Helmet>
     </>
   )
 }

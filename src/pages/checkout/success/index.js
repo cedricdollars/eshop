@@ -1,10 +1,11 @@
 import React from "react"
-
+import { Link } from 'gatsby'
 
 const Index = ()=> {
     return (
       <div>
-        Thank you for buying on our site 
+       <p>Votre achat a été effectué avec succès ! </p> 
+       <Link to="/products">Continuez le magazin</Link>
       </div>
     )
   }

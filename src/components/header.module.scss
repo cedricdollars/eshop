@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Varela&family=Oswald:wght@600&family=Poppins:wght@600&display=swap');
 /* Valeur par défaut */
 $fontFamily : 'Poppins';
 $duration: .2s;
 $distance: 8px;
-$color: #dad046;
+$color: #d1c84b;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
 * {
@@ -12,78 +12,85 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
     margin: 0;
 }
 .header {
-    min-height: 80vh;
-    background: url("../images/cover1.jpg") no-repeat;
+    min-height: 120vh;
+    background: url('../images/cover-1.jpg');
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    .title {
+        font-family: 'Lexend Tera';
+        letter-spacing: -10px;
+        font-size: 3.5rem;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 5vw;
+        padding-top: calc(50vh / 2);
+        
+    }
+    p {
+        padding-left: 6vw;
+        padding-top: 5vh;
+        color: white;
+        font-size: large;
+        font-family: 'Varela';
+    }
+    .button {
+        border: 1px solid black;
+        font-size: .6rem;
+        font-family: 'Varela';
+        margin-left: 6vw;
+        text-transform: uppercase;
+        margin-top: 7vh;
+        padding: 17px 17px;  
+        color: white;
+        background-color: black;
+        &:hover {
+            border: 1px solid #f06666;
+            background-color: transparent;
+            transition: .2s all ease-in;
+        }
+    }
 }
 .header-nav {  
     display: flex;
     justify-content: space-between;
+    /*background-color: #f3f3f3; */
+    background-attachment: fixed; 
+    
     align-items: center;
     text-transform: uppercase;
-    padding: 10vh 10vw;
+    padding: 5vh 10vw;
     height: 65px;
     width: 100vw;
     text-decoration: none;
     z-index: 100;
-    .logo {   
-        
+    .logo {    
         width: 120px;
-        
+        text-decoration: underline;
+        padding-top: 3vh;
     }   
 }
 
+.active {
+    color: black;
+}
 .nav-list {
     display: flex;
     list-style: none;
+    padding-top: calc(5vh / 2);
+    a {
+        color: black ;  
+        font-family: $fontFamily;
+        text-transform: uppercase;
+        font-size: .7rem;
+        padding: 2rem .5rem;
+        &:hover {
+            text-decoration: none;
+            color: #f06666;
+            transition: .2s ease-out all;
+        }
+    }
 }
-.nav-item{
-    color: white ;  
-    font-family: $fontFamily;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    margin-right: .2rem;
-    padding: 2rem .5rem; 
-}
-.nav-item {
-    &:before , &:after{
-        content: '';
-        position: absolute;
-        bottom: 2px;
-        left: 0 ;
-        right: 0;
-        height: 2px;
-        background-color: $color;
 
-    }
-    &:before {
-        opacity: 0;
-        transform: translateY(-$distance);
-        transition: transform 0 $easeOutBack, opacity 0s;
-      
-    }
-    &:after {
-        opacity: 0;
-        transform: translateY($distance/2);
-        transition: transform $duration $easeOutBack, opacity $duration;
-    }
-    &:hover,
-    &:focus {
-        &:before,
-        &:after {
-            opacity: 1;
-            transform: translateY(0);   
-        }
-        &:before {
-            transition: transform $duration $easeOutBack, opacity $duration;
-        }
-        &:after {
-            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-        
-        }
-        text-decoration: none;
-        color: $color
-    }
-}
+
 

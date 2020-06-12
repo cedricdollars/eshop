@@ -22,7 +22,7 @@ const btnCheckout = async event => {
 
 const Index = () => {
     return (
-        <button onClick={btnCheckout}>
+        <button className="btn btn-outline-light" onClick={btnCheckout}>
             PAY
         </button>
     )
