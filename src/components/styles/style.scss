@@ -1,6 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Varela&family=Oswald:wght@600&family=Poppins:wght@600&display=swap');
 .btn-account {
     width: 105px;
     font-size: 10px;
     padding-left: 10px;
     font-family: sans-serif;
+}
+.lits{
+    background: #fff;
+    position: absolute;
+    z-index: 88;
+    left: 0;
+    top: 0;
+    width: 25%;
+    bottom: 0;
+    grid: 1fr 1fr;
+}
+.description {
+    font-family: 'Varela';
+    font-size: 2rem;
+    text-align: center;
+}
+.img-fluid {
+    background-size: cover;
+    width: 100%;
+    backface-visibility: hidden;
+    display: block;
+    transition: .3s ease-in;
+   
+}
+.container-product {
+    margin-top: 5vh;
+    min-height: 100vh;
+}
+.article {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ .middle {
+    transition: .3s ease-in;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    .btn-product {
+        text-decoration: none;
+        color: white;
+        background-color: #1d1c1c;
+        font-size: 0.6rem;
+        padding: 12px 17px;
+        font-family:'Poppins';
+    }
+}
+.article:hover .middle {
+    opacity: 1;
+}
+.article:hover .img-fluid {
+    opacity: 0.5;
+    filter: brightness(50%);
+    cursor: pointer;
 }

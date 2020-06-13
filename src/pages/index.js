@@ -14,10 +14,7 @@ const IndexPage = () => (
       <strong>
         Our products collections are here! it's time to discover all about the furniture
       </strong>
-      
-      
-    </section>
-    
+    </section>   
   </Layout>
 )
 

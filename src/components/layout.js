@@ -5,13 +5,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css'
 import Header from "./header"
-import  CardProducts  from '../components/cardProducts'
+import ListProduct  from './listProduct'
 import Footer from './footer'
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  
+  //console.log(children)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           </h3>
         </div>
         <div className="container mx-auto px-5">
-          <CardProducts />
+          <ListProduct />
         </div>
        
       </section>

@@ -15,6 +15,27 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `product`,
+                path: `${__dirname}/products`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `lit`,
+                path: `${__dirname}/src/products/lits`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+              path: `${__dirname}/src/pages`,
+              name: 'pages',
+            },
+        },
         `gatsby-transformer-remark`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
@@ -43,15 +64,15 @@ module.exports = {
         {
             resolve: `gatsby-plugin-mailchimp`,
             options: {
-                endpoint: process.env.MAILCHIMP_ENDPOINT,
+                endpoint: "https://yahoo.us8.list-manage.com/subscribe/post?u=07605aff4d4b15b134d3b2c82&amp;id=bcc612a995",
                 timeout: 3500
             }
         },
         {
             resolve: `gatsby-source-stripe`,
             options: {
-                objects: ["Sku", "products"],
-                secretKey: process.env.STRIPE_SECRET_KEY,
+                objects: ["Sku"],
+                secretKey: "sk_test_tktCxNPOMxVa7GNjkEB74kZH00rrn7zEO2",
                 downloadFiles: false
             }
         }
