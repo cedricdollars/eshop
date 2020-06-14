@@ -1,5 +1,6 @@
 import React from "react"
 import { Dropdown, Button, Icon } from "semantic-ui-react"
+import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget"
 import { Link } from "gatsby"
 import './styles/style.scss'
 

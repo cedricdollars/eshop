@@ -13,9 +13,9 @@ import { Icon } from 'semantic-ui-react'
     return (
         <div>
             <Helmet>
-                <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"/>
-                <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
-                <script id="snipcart" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0"></script>
+                <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.css" />
+                <div id="snipcart" data-api-key="YzY1Yzk5ODAtMWRkMy00ZTI2LTg1ZmEtMWI0ZTljZWFmYTMzNjM3MjU4NjI3NTM3Mzk4MzE5" hidden></div>
+                <script src="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.js"></script>
             </Helmet> 
             <Navbar/>
             <section className="section">
