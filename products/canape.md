@@ -1,5 +1,5 @@
 ---
-title: canapé
+title: "canapé en cuir "
 price: "305.89"
 quantity: "70"
 description: >-
@@ -11,7 +11,7 @@ description: >-
   Ce type de canapé a été conçu récemment par les plus grands ingénieurs en immobilier. sa souplesse et son épaisseur sont  d'une qualité inestimable aussi solide qu'il soit, on pourrait très vite avoir envie de le considérer comme son lit à coucher. 
 image: /assets/canapé.jpg
 path: canape
-date: 2020-05-25
+date: 2020-05-25T00:00:00.000Z
 promo: true
 category:
   - canapé fixe
