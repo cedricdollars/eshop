@@ -13,9 +13,7 @@ import { Icon } from 'semantic-ui-react'
     return (
         <div>
             <Helmet>
-                <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.css" />
-                <div id="snipcart" data-api-key="YzY1Yzk5ODAtMWRkMy00ZTI2LTg1ZmEtMWI0ZTljZWFmYTMzNjM3MjU4NjI3NTM3Mzk4MzE5" hidden></div>
-                <script src="https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.js"></script>
+                
             </Helmet> 
             <Navbar/>
             <section className="section">
@@ -52,7 +50,7 @@ import { Icon } from 'semantic-ui-react'
                                 data-item-image={node.frontmatter.image}
                                 data-item-name={node.frontmatter.title}
                                 data-item-description={node.frontmatter.description}
-                                data-item-url={"http://snipcart-gatsby.netlify.com" + node.frontmatter.path}
+                                data-item-url={"https://eshop-mobelia.netlify.app" + node.frontmatter.path}
                                 ><Icon name="add to cart"></Icon> Ajouter au panier</button>
                             </div>
                         ))
@@ -65,22 +63,22 @@ import { Icon } from 'semantic-ui-react'
     )
 }
 export const query = graphql`
-query  {
- allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
-    edges {
-      node {
+query queryProducts {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
+      edges {
+        node {
           id
-        frontmatter {
-          image
-          description
-          quantity
-          title
-          price
+          frontmatter {
+            image
+            price
+            title
+            quantity
+          }
         }
       }
     }
   }
-}
+  
 `
 
    

@@ -82,7 +82,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-netlify-identity`,
             options: {
-                url: `https://e-shop-site.netlify.app/`
+                url: `https://eshop-mobelia.netlify.app`
             }
         },
         {
