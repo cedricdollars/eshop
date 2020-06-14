@@ -5747,6 +5747,11 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
+date-and-time@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/date-and-time/-/date-and-time-0.11.1.tgz#0c3c8b21811562c53345b497c5e1c731b12e99eb"
+  integrity sha512-+1JkWME+UWRpCfvE1T0Vfbw629Ego0IcfHH0qtP4KhAXs7IJT2qsg1hNePqZhyD8Wby46HlW393lSL5PZSzDsA==
+
 date-fns@^2.14.0:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.14.0.tgz#359a87a265bb34ef2e38f93ecf63ac453f9bc7ba"
@@ -7882,6 +7887,13 @@ gatsby-page-utils@^0.2.7:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-build-date@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-build-date/-/gatsby-plugin-build-date-1.0.0.tgz#2582133699c947adb0ec921f0d5e7e04f0ac4e25"
+  integrity sha512-XlR4w3mQqhRE241Kx4/0lFY78/TnY1IDqgvKzgk17RZUcM13QYk7GyuN5Ifx96NMbMEwUUeal4lDqSigfr2Ydw==
+  dependencies:
+    date-and-time "^0.11.1"
+
 gatsby-plugin-create-client-paths@^2.3.1:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-2.3.2.tgz#90980462a9c7a6984f29736376f7105be55c8d43"
@@ -8010,6 +8022,11 @@ gatsby-plugin-sharp@^2.6.9:
     sharp "^0.25.1"
     svgo "1.3.2"
     uuid "^3.4.0"
+
+gatsby-plugin-snipcart@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-snipcart/-/gatsby-plugin-snipcart-1.1.2.tgz#ac2e672ae4fec200ecfce81f267e6e95040131a5"
+  integrity sha512-p3qpYVbedxqxWUJ42qhZKF9dbmGwi0mHvUZZ53/FcNoFrp3AeWFah86+YWkgPuERlliQBRUuZoW1gNV13ONnlA==
 
 gatsby-plugin-stripe@^1.2.4:
   version "1.2.4"

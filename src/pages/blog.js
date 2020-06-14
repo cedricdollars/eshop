@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/navbar'
+import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import '../components/styles/style.scss'
 import Footer from '../components/footer'
@@ -30,5 +31,22 @@ import Footer from '../components/footer'
         
     )
 }
+
+export const query = graphql`
+query  {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blogs/"}}) {
+       edges {
+         node {
+           frontmatter {
+             image
+             description
+             title
+           }
+         }
+       }
+     }
+   }
+`
+
 
 export default Blog

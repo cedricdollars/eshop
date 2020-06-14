@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/navbar'
-import Proptypes from 'prop-types'
 import '../components/styles/style.scss'
 import Footer from '../components/footer'
-
+import { Icon } from 'semantic-ui-react'
 
 
  const products = ({ data }) => {
@@ -38,21 +37,26 @@ import Footer from '../components/footer'
                         >   Rechercher
                         </button>
                 </div> */}
-                <article className="container">
-                    
-                    <div className="row">
-                        
-                        {
-                            data.allMarkdownRemark.edges.map(({node}, index) => (
-                                <div className="img-product col-xl-3" key={index}>
-                                    <strong>{node.frontmatter.title}</strong>
-                                    <img src={node.frontmatter.image} alt="image1" />
-                                    
-                                    <p>prix : {node.frontmatter.price} € </p>
-                                    <button className="btn-add-cart" >Ajouter au panier</button>
-                                </div>
-                            ))
-                        }
+                <article className="container">  
+                    <div className="row">     
+                    {
+                        data.allMarkdownRemark.edges.map(({node}, index) => (
+                            <div className="img-product col-xl-3" key={index}>
+                                <strong>{node.frontmatter.title}</strong>
+                                <img src={node.frontmatter.image} alt="image1" />
+                                <p>prix : {node.frontmatter.price} € </p>
+                                <button 
+                                className="btn btn-btn-outline-dark bg-black focus:outline-none text-white"
+                                data-item-id={node.frontmatter.id}
+                                data-item-price={node.frontmatter.price}
+                                data-item-image={node.frontmatter.image}
+                                data-item-name={node.frontmatter.title}
+                                data-item-description={node.frontmatter.description}
+                                data-item-url={"http://snipcart-gatsby.netlify.com" + node.frontmatter.path}
+                                ><Icon name="add to cart"></Icon> Ajouter au panier</button>
+                            </div>
+                        ))
+                    }
                     </div>
                 </article>
             </section>

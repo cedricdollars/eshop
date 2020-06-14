@@ -51,8 +51,7 @@
         max-width: 100%;
         height: auto;
         object-fit: contain;
-    }
-    
+    }  
 }
 .img-fluid1 {
     grid-column: 1 / span 2 ;
@@ -113,5 +112,12 @@
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-
+/*
+ products style
+*/
+.container {
+    img {
+        cursor: pointer;
+    }
+}
 

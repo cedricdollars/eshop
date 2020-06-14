@@ -16,10 +16,27 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-plugin-build-date`,
+            options: {
+                formatAsDateString: true, 
+                formatting: {
+                    format: 'dddd D MMMM YYYY', 
+                    utc: false,
+                }
+             },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `product`,
                 path: `${__dirname}/products`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `blog`,
+                path: `${__dirname}/src/blogs`,
             },
         },
         {
@@ -74,6 +91,12 @@ module.exports = {
                 endpoint: "https://yahoo.us8.list-manage.com/subscribe/post?u=07605aff4d4b15b134d3b2c82&amp;id=bcc612a995",
                 timeout: 3500
             }
+        },
+        {
+            resolve: `gatsby-plugin-snipcart`,
+            options: {
+                apiKey: 'S_ZDlkYjk0MGItOTM2MS00MWE1LWE5Y2EtNTJkYjllNDdjNWM4NjM3Mjc3NTM4MTUwNDMzOTM2'
+            }  
         },
         {
             resolve: `gatsby-source-stripe`,

@@ -44,3 +44,15 @@ collections:
       - { name: path, required: true, label: Path}
       - { name: title, required: true, label: Titre}
       - { name: price, required: false, label: Prix, default: "5"}
+  
+  - name: blog
+    label: blog
+    folder: /src/blogs
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: true, label: Path}
+      - { name: description, required: true, label: description}
+ 
