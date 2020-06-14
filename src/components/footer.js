@@ -3,6 +3,8 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import  { Form } from 'semantic-ui-react'
 
 
+
+
 const Footer = () => {
     const [email, setEmail] = useState("")
     const handleSubmit = e => {

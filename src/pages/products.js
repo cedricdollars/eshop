@@ -40,7 +40,7 @@ import { Icon } from 'semantic-ui-react'
                                 data-item-image={node.frontmatter.image}
                                 data-item-name={node.frontmatter.title}
                                 data-item-description={node.frontmatter.description}
-                                data-item-url={"https://eshop-mobelia.netlify.app/" + node.id}
+                                data-item-url={"https://eshop-mobelia.netlify.app/" + node.frontmatter.path}
                                 ><Icon name="add to cart"></Icon> Ajouter au panier</button>
                             </div>
                         ))
@@ -69,6 +69,7 @@ query queryProducts {
             price
             title
             quantity
+            path
           }
         }
       }
