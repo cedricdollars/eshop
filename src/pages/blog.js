@@ -6,8 +6,6 @@ import '../components/styles/style.scss'
 import Footer from '../components/footer'
 
  const Blog = () => {
-
-
     return (
         <div>
              <Helmet>
@@ -27,8 +25,7 @@ import Footer from '../components/footer'
                  </div>
              </main>  
              <Footer/>      
-        </div>
-        
+        </div>   
     )
 }
 
