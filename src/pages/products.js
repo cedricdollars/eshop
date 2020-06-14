@@ -47,7 +47,7 @@ import { Icon } from 'semantic-ui-react'
                                 <p>prix : {node.frontmatter.price} € </p>
                                 <button 
                                 className="btn btn-btn-outline-dark bg-black focus:outline-none text-white"
-                                data-item-id={node.frontmatter.id}
+                                data-item-id={node.id}
                                 data-item-price={node.frontmatter.price}
                                 data-item-image={node.frontmatter.image}
                                 data-item-name={node.frontmatter.title}
@@ -69,6 +69,7 @@ query  {
  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
     edges {
       node {
+          id
         frontmatter {
           image
           description
