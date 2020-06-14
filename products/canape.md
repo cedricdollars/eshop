@@ -1,7 +1,7 @@
 ---
 title: "canapé en cuir "
 price: "305.89"
-quantity: "70"
+quantity: "10"
 description: >-
   Avoir un grand canapé chez soi n'est pas juste synonyme de luxe mais de
   plaisir à s'offrir le plus grand confort possible. Ne vous fiez pas à son nom,
@@ -9,7 +9,7 @@ description: >-
   laissant une sensation de bien-être et de repos.
 
   Ce type de canapé a été conçu récemment par les plus grands ingénieurs en immobilier. sa souplesse et son épaisseur sont  d'une qualité inestimable aussi solide qu'il soit, on pourrait très vite avoir envie de le considérer comme son lit à coucher. 
-image: /assets/canapé.jpg
+image: /assets/sofa.jpg
 path: canape
 date: 2020-05-25T00:00:00.000Z
 promo: true
