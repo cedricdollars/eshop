@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
      <Helmet>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+       
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
@@ -37,17 +38,11 @@ const Layout = ({ children }) => {
         }}
       >
       </div>
-      <section>
-        <div className="container mx-auto px-6 ">
-          <h3 className="text-4xl font-bold text-center text-gray-800 mb-8 uppercase">
-            
-          </h3>
-        </div>
+      <main> 
         <div className="container mx-auto px-5">
           <ListProduct />
-        </div>
-       
-      </section>
+        </div>  
+      </main>
       <Footer/>
       <Helmet>
         <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>

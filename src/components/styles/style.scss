@@ -22,7 +22,7 @@
 }
 .img-fluid {
     background-size: cover;
-    width: 100%;
+  
     backface-visibility: hidden;
     display: block;
     transition: .3s ease-in;
@@ -30,13 +30,39 @@
 }
 .container-product {
     margin-top: 5vh;
-    min-height: 100vh;
+    min-height: 120vh;
+    h2 {
+        font-family: 'Poppins';
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: .9rem;
+        letter-spacing: 1px;
+        font-family: 'Poppins';
+    }
+   
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+}
+.img-fluid1 {
+    grid-column: 1 / span 2 ;
 }
 .article {
     display: block;
     justify-content: center;
     align-items: center;
     position: relative;
+   
 }
  .middle {
     transition: .3s ease-in;
@@ -46,13 +72,19 @@
     opacity: 0;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    
     .btn-product {
         text-decoration: none;
         color: white;
         background-color: #1d1c1c;
         font-size: 0.6rem;
-        padding: 12px 17px;
+        padding: 15px 20px;
         font-family:'Poppins';
+        text-transform: uppercase;
+        &:hover {
+            border: 1px solid white;
+            background-color: transparent;
+        }
     }
 }
 .article:hover .middle {
@@ -60,6 +92,26 @@
 }
 .article:hover .img-fluid {
     opacity: 0.5;
+    transform: scale(0.9);
     filter: brightness(50%);
     cursor: pointer;
+    
 }
+.img-product {
+    position: relative;
+    display: grid;
+    
+   strong,  p {
+        font-family: 'Poppins';
+        font-size: 0.7rem;
+    }
+    p {
+        text-align: center;
+    }
+}.title-black {
+    font-family: 'Lexend Tera';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+

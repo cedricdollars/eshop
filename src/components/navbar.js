@@ -5,10 +5,9 @@ import headerStyles from './header.module.scss'
 import logo from '../images/logo.png'
 import Login from '../components/login'
 
-
  const Navbar = () => {
     return (
-        
+       <> 
         <nav className={headerStyles.headerNav}>
             <div className={headerStyles.logo}>
                 <Link to="/">
@@ -20,7 +19,7 @@ import Login from '../components/login'
                     <Link activeClassName={headerStyles.active}  to="/">Home</Link>
                 </li>
                 <li className={headerStyles.navItem}>
-                    <Link activeClassName={headerStyles.active} to="/About">About</Link>
+                    <Link activeClassName={headerStyles.active} to="/about">About</Link>
                 </li>
                 <li className={headerStyles.navItem}>
                     <Link activeClassName={headerStyles.active}  to="/blog">Blog</Link>
@@ -42,7 +41,8 @@ import Login from '../components/login'
                 </li>
             </ul>
             </nav>
-         
+           
+         </>
     )
 }
 export default Navbar

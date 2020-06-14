@@ -1,17 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 import headerStyles from './header.module.scss'
-import { Button, Icon, ButtonContent } from 'semantic-ui-react'
-import logo from '../images/logo.png'
 import Navbar from './navbar'
-import { Carousel } from 'react-bootstrap'
-import  Login  from './login'
+import { graphql } from 'gatsby'
+
 
 const Header = () => {
 
   return(
     <header className={headerStyles.header}>
+     
       <Navbar />
+      
       <div>
         <h1 className={headerStyles.title}>
           <strong>Heureux de vous </strong><br/>
@@ -31,6 +30,19 @@ const Header = () => {
   )
 }
 
-
+export const query = graphql`
+query  {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/carousel/"}}) {
+    edges {
+      node {
+        frontmatter {
+          image
+          path
+        }
+      }
+    }
+  }
+}
+`
 
 export default Header

@@ -30,6 +30,13 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `carousel`,
+                path: `${__dirname}/src/components/carousel`,
+            },
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
               path: `${__dirname}/src/pages`,

@@ -59,7 +59,7 @@ const Contact = ()=> {
         <div className="md:flex md:items-center">
           <div className="flex w-full justify-end">
             <button
-              className="shadow bg-green hover:bg-green-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="shadow bg-blue hover:bg-blue-600 focus:shadow-outline focus:outline-none text-black font-bold py-2 px-4 rounded"
               type="submit">
               Send
             </button>

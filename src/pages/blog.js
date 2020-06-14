@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import { Helmet } from 'react-helmet'
-
+import '../components/styles/style.scss'
+import Footer from '../components/footer'
 
  const Blog = () => {
+
+
     return (
         <div>
              <Helmet>
@@ -12,16 +15,17 @@ import { Helmet } from 'react-helmet'
             <Navbar />
              <main>
                  <div className="jumbotron">
-                    <h2 className=" text-center tite-blog">
+                    <h1 className="text-center title-black">
                         Blog
-                    </h2>
+                    </h1>
                  </div>
                  <div className="container">
                      <aside>
 
                      </aside>
                  </div>
-             </main>        
+             </main>  
+             <Footer/>      
         </div>
         
     )
