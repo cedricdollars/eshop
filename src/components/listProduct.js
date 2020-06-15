@@ -5,6 +5,7 @@ import imageChair from '../images/product4.jpg'
 import imageTable from '../images/table.jpg'
 import imgHome from '../images/home.jpg'
 import imgSofa from '../images/canapé.jpg'
+import meuble from '../images/meubleTv.jpg'
 
 const ListProduct = () => {
 
@@ -55,6 +56,12 @@ const ListProduct = () => {
                     <img src={imgSofa} className="img-fluid" />
                     <div className="middle">
                         <button className="btn-product" >Canapé</button>
+                    </div>
+                </article>
+                <article className="article">
+                    <img src={meuble} className="img-fluid" />
+                    <div className="middle">
+                        <button className="btn-product" >meuble tv</button>
                     </div>
                 </article>
             </div> 

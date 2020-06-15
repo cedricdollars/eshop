@@ -3,20 +3,20 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import  { Form } from 'semantic-ui-react'
 
 
-
-
 const Footer = () => {
     const [email, setEmail] = useState("")
     const handleSubmit = e => {
         e.preventDefault()
         addToMailchimp(email)
         .then((data) => (
-            console.log(data.msg)
+            alert(data.msg)
+            
         ))
         .catch(() => {
             console.log(email)
         })
     }
+
     const handleEmailChange = e => {
         setEmail(e.currentTarget.value)
     }
@@ -56,10 +56,13 @@ const Footer = () => {
                     placeholder='Email'
                     name='email'
                     onChange={handleEmailChange}
+                    required
                 />
+                
                 <Form.Button 
                 content='Submit'
                 />
+                
                 </Form.Group>
             </Form>   
           </div> 

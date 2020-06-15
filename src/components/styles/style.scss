@@ -30,7 +30,7 @@
 }
 .container-product {
     margin-top: 5vh;
-    min-height: 120vh;
+    min-height: 130vh;
     h2 {
         font-family: 'Poppins';
         font-size: 2rem;
@@ -120,4 +120,21 @@
         cursor: pointer;
     }
 }
-
+.btn-outline-read {
+    width: calc(100% /2);
+    padding: 15px 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Varela';
+    margin-right: 25%;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: .2s all ease-in-out;
+        
+    }
+}
+.text-blog, h1 {
+    font-family: 'Varela';
+}

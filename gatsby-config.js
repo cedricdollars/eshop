@@ -1,10 +1,10 @@
 require('dotenv').config()
 module.exports = {
     siteMetadata: {
-        title: `Mobilia Shop`,
+        title: `Mobelia Shop`,
         description: `Furniture sales website.`,
         author: `Cédric Ngouné`,
-        url: `https://e-shop-site.netlify.app/`
+        url: `eshop-mobelia.netlify.app`
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

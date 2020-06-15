@@ -5,7 +5,9 @@ import headerStyles from './header.module.scss'
 import logo from '../images/logo.png'
 import Login from '../components/login'
 
+
  const Navbar = () => {
+    
     return (
        <> 
         <nav className={headerStyles.headerNav}>
@@ -33,9 +35,10 @@ import Login from '../components/login'
                 
             </ul>
             <ul className={headerStyles.navList}>
-            <li className={headerStyles.navItem}>
+                <li className={headerStyles.navItem}>
                     <Link to='/checkout'><Icon name="cart"/></Link>
                 </li>
+                
                 <li className='login'>
                     <Login/>
                 </li>
