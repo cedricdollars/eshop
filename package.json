@@ -47,7 +47,8 @@
         "react-netlify-identity": "^0.2.5",
         "react-netlify-identity-widget": "^0.2.7",
         "semantic-ui-css": "^2.4.1",
-        "semantic-ui-react": "^0.88.2"
+        "semantic-ui-react": "^0.88.2",
+        "uikit": "^3.5.4"
     },
     "devDependencies": {
         "prettier": "2.0.5"

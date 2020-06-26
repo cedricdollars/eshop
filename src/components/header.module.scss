@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Varela&family=Oswald:wght@600&family=Poppins:wght@600&display=swap');
-/* Valeur par défaut */
+/* variables  */
 $fontFamily : 'Poppins';
 $duration: .2s;
 $distance: 8px;
@@ -58,14 +58,13 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
     /*background-color: #f3f3f3; */
     align-items: center;
     text-transform: uppercase;
-    padding: 5vh 10vw;
+    padding: 5vh 5vw;
     height: 65px;
     width: 100vw;
     text-decoration: none;
     z-index: 100;
     .logo {    
         width: 120px;
-        text-decoration: underline;
         padding-top: 3vh;
     }   
 }
@@ -82,12 +81,13 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
         font-family: $fontFamily;
         text-transform: uppercase;
         font-size: .7rem;
-        padding: 2rem .7rem;
+        padding: 5vh 2vw;
         &:hover {
             text-decoration: none;
-            color: #f06666;
+            color: #fff;
             transition: .2s ease-out all;
         }
+       
     }
 }
 
